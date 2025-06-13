@@ -42,6 +42,7 @@ export interface ListingInfo {
     propertyPhotos: string[];
     shortDescription: string;
     listingDescription: string;
+    userUpdatedAt?: string;
 }
 export interface PropertyComp {
     listingInfo: PropertyCompListingInfo;
