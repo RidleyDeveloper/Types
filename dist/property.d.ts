@@ -11,7 +11,7 @@ export interface Property {
     taxAssessment: TaxAssessment;
     createdAt: number;
     live: boolean;
-    listingInfo: Record<string, any>;
+    listingInfo: ListingInfo;
     updatedAt: number;
     hoa: HOA[];
     id: string;
@@ -19,6 +19,29 @@ export interface Property {
 }
 export interface ListingInfo {
     address: Address;
+    propertyType: string;
+    beds: number;
+    fullBathrooms: number;
+    threeQuarterBathrooms?: number;
+    halfBathrooms?: number;
+    quarterBathrooms?: number;
+    squareFootage: string;
+    lotSize: string;
+    yearBuilt: string;
+    listingPrice: number;
+    schools: {
+        elementary: string;
+        middle: string;
+        high: string;
+    };
+    contactInfo: {
+        name: string;
+        email: string;
+        phone: string;
+    };
+    propertyPhotos: string[];
+    shortDescription: string;
+    listingDescription: string;
 }
 export interface PropertyComp {
     listingInfo: ListingInfo;
@@ -243,8 +266,8 @@ export interface MarketSingleFamily {
 }
 export interface MarketConditions {
     market_trend: number;
-    inventory_level: 'very_low' | 'low' | 'balanced' | 'high' | 'very_high';
+    inventory_level: "very_low" | "low" | "balanced" | "high" | "very_high";
     days_on_market: number;
     list_to_sold_ratio: number;
-    volatility?: 'normal' | 'high';
+    volatility?: "normal" | "high";
 }
