@@ -17,6 +17,66 @@ export interface Property {
   hoa: HOA[];
   id: string;
   marketDetails: MarketDetails[];
+  marketGrade: MarketGrade;
+  marketPulse: MarketPulse;
+}
+
+export interface MarketGrade {
+  grade: "A" | "B" | "C" | "D" | "F";
+}
+
+export interface MarketPulse {
+  daysOnMarketMedian: number;
+  daysOnMarketMedianMovingAvg: number;
+  daysOnMarketNotContractMedian: number;
+  daysOnMarketNotContractMedianMovingAvg: number;
+  daysToCloseMedian: number;
+  daysToCloseMedianMovingAvg: number;
+  daysToContractMedian: number;
+  daysToContractMedianMovingAvg: number;
+  DaysToFirstPriceDropMedian: number;
+  daysToFirstPriceDropMedianMovingAvg: number;
+  eventDate: string;
+  listingsClosedCount: number;
+  listingsClosedCountMovingAvg: number;
+  listingsNewCount: number;
+  listingsNewCountMovingAvg: number;
+  listingsOnMarketCount: number;
+  listingsOnMarketCountMovingAvg: number;
+  ListingsPriceChangeCount: number;
+  listingsPriceChangeCountMovingAvg: number;
+  listingsPriceDropCount: number;
+  listingsPriceDropCountMovingAvg: number;
+  listingsPriceDropPercent: number;
+  listingsPriceDropPercentMovingAvg: number;
+  listingsRemovedCount: number;
+  listingsRemovedCountMovingAvg: number;
+  listingsRemovedPercent: number;
+  listingsRemovedPercentMovingAvg: number;
+  listingsUnderContractCount: number;
+  listingsUnderContractCountMovingAvg: number;
+  listingsUnderContractPercent: number;
+  listingsUnderContractPercentMovingAvg: number;
+  monthsOfSupplyMedian: number;
+  monthsOfSupplyMedianMovingAvg: number;
+  priceChangePercentMedian: number;
+  priceChangePercentMedianMovingAvg: number;
+  priceClosedMedian: number;
+  priceClosedMedianMovingAvg: number;
+  priceNewListMedian: number;
+  priceNewListMedianMovingAvg: number;
+  priceOnMarketMedian: number;
+  priceOnMarketMedianMovingAvg: number;
+  pricePerSqftClosedMedian: number;
+  pricePerSqftClosedMedianMovingAvg: number;
+  pricePerSqftNewListMedian: number;
+  pricePerSqftNewListMedianMovingAvg: number;
+  pricePerSqftOnMarketMedian: number;
+  pricePerSqftOnMarketMedianMovingAvg: number;
+  saleToListPriceMedian: number;
+  saleToListPriceMedianMovingAvg: number;
+  saleToListPriceOriginalMedian: number;
+  saleToListPriceOriginalMedianMovingAvg: number;
 }
 
 export interface ListingInfo {
