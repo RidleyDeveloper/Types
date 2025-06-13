@@ -39,6 +39,7 @@ export interface PropertyDetailInfo {
         propertyValue: PropertyValue;
         propertyValuation: PropertyValuation;
         propertySummary: string | null;
+        sellingTimeline?: string | null;
         plan: "ESSENTIAL" | "ESSENTIAL_PLUS_LEGAL" | "NONE" | null;
         planDetails: {
             purchaseDate: string | null;
