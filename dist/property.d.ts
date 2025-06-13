@@ -200,7 +200,7 @@ export interface HOA {
     frequency: string | null;
 }
 export interface PropertyDetails {
-    basement: Basement;
+    basement: Basement | null;
     parking: Parking;
     livingAreaBelowGrade: number | null;
     solarPanels: boolean;
@@ -212,7 +212,7 @@ export interface PropertyDetails {
     subdivision: boolean;
     roofMaterial: string;
     sewer: boolean;
-    zoning: Zoning;
+    zoning: Zoning | null;
     constructionTypes: string[];
     propertyType: string;
     propertyTypeDescription: string;
@@ -228,7 +228,7 @@ export interface PropertyDetails {
     lotSize: number;
     roofType: string;
     pool: boolean;
-    bathrooms: Bathrooms;
+    bathrooms: Bathrooms | null;
     water: string | null;
     parcelId: string;
     bedrooms: number;
