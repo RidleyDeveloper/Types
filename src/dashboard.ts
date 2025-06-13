@@ -226,6 +226,7 @@ export interface UniqueFeaturesBreakdown {
 export interface PropertySourceValue {
     estimated_price: number | null;
     current_listing_price: number | null;
+    zestimate: number | null;
     tax_assessed_value: {
         amount: number | null;
     } | null;
