@@ -11,7 +11,7 @@ export interface Property {
     taxAssessment: TaxAssessment;
     createdAt: number;
     live: boolean;
-    listingInfo: ListingInfo;
+    listingInfo: ListingInfo | null;
     updatedAt: number;
     hoa: HOA[];
     id: string;
