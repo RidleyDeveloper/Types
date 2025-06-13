@@ -47,7 +47,7 @@ export interface ListingInfo {
 }
 
 export interface PropertyComp {
-  listingInfo: ListingInfo;
+  listingInfo: PropertyCompListingInfo;
   summary: string;
   propertyPhotos: string[];
   address: CompsAddress;
@@ -59,7 +59,7 @@ export interface PropertyComp {
   addressId: number;
 }
 
-export interface ListingInfo {
+export interface PropertyCompListingInfo {
   currentListDate: string;
   lastCloseDate: string;
   currentStatus: string;
