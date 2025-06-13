@@ -35,7 +35,7 @@ export interface PropertyDetailInfo {
         planDetails: {
             purchaseDate: string | null;
             purchasePrice: string | null;
-        }
+        } | null;
     };
 }
 
