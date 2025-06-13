@@ -1,6 +1,7 @@
 import { MarketConditions } from "./property";
 export interface Dashboard {
     confirmedPropertyDetails: PropertyDetailInfo;
+    notifications?: RidleyNotification[] | null;
     conciergeCalls: ConciergeCalls[];
     addresses: Address[];
     onboardingComplete: boolean;
@@ -15,6 +16,17 @@ export interface Dashboard {
     };
     currentProperty: string;
     id: string;
+}
+export interface RidleyNotification {
+    id: string;
+    createdAt: number;
+    message: string;
+    category: string;
+    seen: boolean;
+    actionUrl: string;
+    meta: {
+        [key: string]: string | number | boolean | null;
+    };
 }
 export interface PropertyDetailInfo {
     [key: string]: {
