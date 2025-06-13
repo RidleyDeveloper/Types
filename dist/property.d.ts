@@ -201,43 +201,43 @@ export interface HOA {
 }
 export interface PropertyDetails {
     basement: Basement | null;
-    parking: Parking;
+    parking: Parking | null;
     livingAreaBelowGrade: number | null;
-    solarPanels: boolean;
+    solarPanels: boolean | null;
     architecturalStyle: string | null;
-    fireplace: boolean;
-    yearBuilt: number;
-    legalDescription: string;
-    livingArea: number;
-    subdivision: boolean;
-    roofMaterial: string;
-    sewer: boolean;
+    fireplace: boolean | null;
+    yearBuilt: number | null;
+    legalDescription: string | null;
+    livingArea: number | null;
+    subdivision: boolean | null;
+    roofMaterial: string | null;
+    sewer: boolean | null;
     zoning: Zoning | null;
-    constructionTypes: string[];
-    propertyType: string;
-    propertyTypeDescription: string;
-    poolCommunity: boolean;
-    heating: string[];
-    sewerPublic: boolean;
+    constructionTypes: string[] | null;
+    propertyType: string | null;
+    propertyTypeDescription: string | null;
+    poolCommunity: boolean | null;
+    heating: string[] | null;
+    sewerPublic: boolean | null;
     buildingConditionCode: string | null;
     buildingQuality: string | null;
     unitsTotal: number | null;
-    stories: number;
-    fireplacesTotal: number;
-    wallsExteriorMaterial: string;
-    lotSize: number;
-    roofType: string;
-    pool: boolean;
+    stories: number | null;
+    fireplacesTotal: number | null;
+    wallsExteriorMaterial: string | null;
+    lotSize: number | null;
+    roofType: string | null;
+    pool: boolean | null;
     bathrooms: Bathrooms | null;
     water: string | null;
-    parcelId: string;
-    bedrooms: number;
+    parcelId: string | null;
+    bedrooms: number | null;
     livingAreaAboveGrade: number | null;
     conditionClass: string | null;
     attic: string | null;
     buildings: string | null;
     roomsTotal: number | null;
-    cooling: string[];
+    cooling: string[] | null;
     neighborhood: string | null;
 }
 export interface Basement {
@@ -247,8 +247,8 @@ export interface Basement {
 }
 export interface Parking {
     garage: number | null;
-    description: string;
-    total: number;
+    description: string | null;
+    total: number | null;
 }
 export interface Zoning {
     description: string | null;
