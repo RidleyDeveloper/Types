@@ -80,7 +80,10 @@ export interface MarketPulse {
 }
 
 export interface ListingInfo {
+  // Preloaded from DashboardData
   address: Address;
+
+  // Ridley ListingData
   propertyType: string;
   beds: number;
   fullBathrooms: number;
@@ -95,6 +98,7 @@ export interface ListingInfo {
     elementary: string;
     middle: string;
     high: string;
+    district: string;
   };
   contactInfo: {
     name: string;
@@ -104,7 +108,150 @@ export interface ListingInfo {
   propertyPhotos: string[];
   shortDescription: string;
   listingDescription: string;
+
+  // ComplianceRestrictions fields
+  isIncorporatedArea?: string;
+  zoning?: string;
+  subdivisionName?: string;
+  houseDirection?: string[];
+  viewType?: string[];
+  isSeniorCommunity?: string;
+  hasRestrictions?: string;
+  restrictionTypes?: string[];
+  petsAllowed?: string[];
+  rentalsAllowed?: string[];
+
+  // ExteriorFeaturesLand fields
+  lotSizeArea?: string;
+  lotSizeAcres?: string;
+  lotNumber?: string;
+  lotFeatures?: string[];
+  fencing?: string[];
+  skiFeatures?: string[];
+  waterfrontFeatures?: string[];
+  currentUse?: string[];
+  vegetation?: string[];
+  horsesAllowed?: string;
+  horseAmenities?: string[];
+  roadSurfaceType?: string[];
+  roadFrontageAccessType?: string[];
+  roadResponsibility?: string[];
+
+  // FinalCompliance fields
+  exclusions?: string;
+  possessionTerms?: string[];
+  linkToPhotos?: string;
+  linkToVirtualTour?: string;
+  documentsAvailable?: string[];
+
+  // HOAInformation fields
+  hasHOA?: string;
+  hoaName?: string;
+  hoaType?: string;
+  hoaFee?: string;
+  hoaFeeFrequency?: string;
+  hoaPhone?: string;
+  associationURL?: string;
+  hoaIncludes?: string[];
+  hoaAmenities?: string[];
+  hoaTransferFee?: string;
+  hoaSpecialAssessment?: string;
+  otherHOAs?: string;
+
+  // OwnershipLegal fields
+  currentlyResiding?: string;
+  currentAddress?: string;
+  isOwner?: string;
+  ownershipType?: string;
+  completeOwnerName?: string;
+  secondOwnerName?: string;
+  authorizedSignerEmail?: string;
+  authorizedSignerPhone?: string;
+  taxLegalDescription?: string;
+  parcelNumber?: string;
+  taxAnnualAmount?: string;
+  taxYear?: string;
+  specialTaxingMetroDistrict?: string;
+  metroDistrictWebsite?: string;
+  listingTerms?: string[];
+  specialListingConditions?: string[];
+  approximateMortgagePayoff?: string;
+
+  // ParkingOutbuildings fields
+  parkingFeatures?: string[];
+  parkingType1?: string;
+  parkingSpaces1?: string;
+  parkingType2?: string;
+  parkingSpaces2?: string;
+  parkingType3?: string;
+  parkingSpaces3?: string;
+  parkingType4?: string;
+  parkingSpaces4?: string;
+  otherLivableStructures?: string;
+  otherOutbuildings?: string;
+
+  // RoomByRoomLayout fields
+  diningRoomLevel?: string;
+  livingRoomLevel?: string;
+  kitchenLevel?: string;
+  laundryLevel?: string;
+  primaryBedroomLevel?: string;
+  bedroom1Level?: string;
+  bedroom2Level?: string;
+  bedroom3Level?: string;
+  bedroom4Level?: string;
+  bedroom5Level?: string;
+  bedroom6Level?: string;
+  primaryBathroomLevel?: string;
+  bathroom1Level?: string;
+  bathroom2Level?: string;
+  bathroom3Level?: string;
+  otherRoomsWithLevel?: string;
+
+  // ShowingLockboxInstructions fields
+  twentyFourHourNoticeRequired?: string;
+  petsOnPremises?: string;
+  usingLockbox?: string;
+
+  // StructuralConstructionDetails fields
+  structureType?: string;
+  propertySubtype?: string;
+  isPropertyAttached?: string;
+  commonWalls?: string[];
+  unitFloorLevel?: string;
+  propertyCondition?: string[];
+  builderName?: string;
+  builderModel?: string;
+  timeOfCompletion?: string;
+  roofType?: string[];
+  constructionMaterials?: string[];
+  foundationType?: string[];
+  architecturalStyle?: string[];
+  hasBasement?: string;
+  basementFeatures?: string[];
+
+  // UtilitiesSystems fields
+  waterIncluded?: string;
+  waterSource?: string[];
+  sewerType?: string[];
+  waterMineralRights?: string[];
+  waterTapPaid?: string;
+  issuedWellPermitNumber?: string;
+  wellType?: string[];
+  wellUsage?: string[];
+  waterTapFee?: string;
+  irrigationSource?: string[];
+  utilities?: string[];
+  electric?: string[];
+  heatingTypeFuelSource?: string[];
+  coolingType?: string[];
+  appliancesIncluded?: string[];
+  securityFeatures?: string[];
+  newHomeCommunityInfo?: string;
+
+  // User timestamps
   userUpdatedAt?: string;
+  userPublishedAt?: string;
 }
 
 export interface PropertyComp {
