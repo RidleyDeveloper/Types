@@ -85,7 +85,7 @@ export interface ListingInfo {
     quarterBathrooms?: number;
     squareFootage: string;
     lotSize: string;
-    yearBuilt: string;
+    yearBuilt: number;
     listingPrice: number;
     schools: {
         elementary: string;
@@ -212,7 +212,7 @@ export interface ListingInfo {
     issuedWellPermitNumber?: string;
     wellType?: string[];
     wellUsage?: string[];
-    waterTapFee?: string;
+    waterTapFee?: number;
     irrigationSource?: string[];
     utilities?: string[];
     electric?: string[];
