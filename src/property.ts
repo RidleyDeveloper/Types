@@ -123,7 +123,7 @@ export interface ListingInfo {
 
   // ExteriorFeaturesLand fields
   lotSizeArea?: string;
-  lotSizeAcres?: string;
+  lotSizeAcres?: number;
   lotNumber?: string;
   lotFeatures?: string[];
   fencing?: string[];
@@ -180,13 +180,13 @@ export interface ListingInfo {
   // ParkingOutbuildings fields
   parkingFeatures?: string[];
   parkingType1?: string;
-  parkingSpaces1?: string;
+  parkingSpaces1?: number;
   parkingType2?: string;
-  parkingSpaces2?: string;
+  parkingSpaces2?: number;
   parkingType3?: string;
-  parkingSpaces3?: string;
+  parkingSpaces3?: number;
   parkingType4?: string;
-  parkingSpaces4?: string;
+  parkingSpaces4?: number;
   otherLivableStructures?: string;
   otherOutbuildings?: string;
 
@@ -218,7 +218,7 @@ export interface ListingInfo {
   propertySubtype?: string;
   isPropertyAttached?: string;
   commonWalls?: string[];
-  unitFloorLevel?: string;
+  unitFloorLevel?: number;
   propertyCondition?: string[];
   builderName?: string;
   builderModel?: string;
