@@ -7,7 +7,8 @@ export interface Property {
   schoolDetails: SchoolDetails;
   propertyReportId: number;
   "address-slug": string;
-  status: string;
+  status: "DRAFT" | "PUBLISHED";
+  publishedAt: number | null;
   propertyValue: PropertyValue;
   taxAssessment: TaxAssessment;
   createdAt: number;
