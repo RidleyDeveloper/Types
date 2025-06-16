@@ -82,6 +82,8 @@ export interface MarketPulse {
 export interface ListingInfo {
   // Preloaded from DashboardData
   address: Address;
+  createdAt?: number;
+  updatedAt?: number;
 
   // Ridley ListingData
   propertyType: string;

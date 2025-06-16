@@ -77,6 +77,8 @@ export interface MarketPulse {
 }
 export interface ListingInfo {
     address: Address;
+    createdAt?: number;
+    updatedAt?: number;
     propertyType: string;
     beds: number;
     fullBathrooms: number;
