@@ -101,7 +101,6 @@ export interface ListingInfo {
     elementary: string;
     middle: string;
     high: string;
-    district: string;
   };
   contactInfo: {
     name: string;
