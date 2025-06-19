@@ -13,6 +13,7 @@ export interface Property {
     createdAt: number;
     live: boolean;
     listingInfo: ListingInfo | null;
+    draftListingInfo: ListingInfo | null;
     updatedAt: number;
     hoa: HOA[];
     id: string;
