@@ -15,7 +15,7 @@ export interface Property {
   live: boolean;
   listingInfo: ListingInfo | null;
   draftListingInfo: ListingInfo | null;
-  mlsInfo: {} | null; // Placeholder for MLS info
+  mlsInfo: MlsInfo | null; // Placeholder for MLS info
   updatedAt: number;
   hoa: HOA[];
   id: string;
@@ -80,6 +80,12 @@ export interface MarketPulse {
   saleToListPriceMedianMovingAvg: number;
   saleToListPriceOriginalMedian: number;
   saleToListPriceOriginalMedianMovingAvg: number;
+}
+
+export interface MlsInfo {
+  address: Address;
+  createdAt?: number;
+  updatedAt?: number;
 }
 
 export interface ListingInfo {
