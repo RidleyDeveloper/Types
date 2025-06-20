@@ -32,28 +32,31 @@ export interface RidleyNotification {
 }
 
 export interface PropertyDetailInfo {
-    [key: string]: {
-        intakeForm: IntakeForm
-        intakeFormComplete: boolean;
-
-        propertyCreateInProgress: boolean;
-        propertyId: string;
-        propertyReportId: number;
-        propertySlug: string;
-        propertyValue: PropertyValue;
-        propertyValuation: PropertyValuation;
-        propertySummary: string | null;
-
-        sellingTimeline?: string | null;
-
-        plan: "ESSENTIAL" | "ESSENTIAL_PLUS_LEGAL" | "NONE" | null;
-        planDetails: {
-            purchaseDate: string | null;
-            purchasePrice: string | null;
-        } | null;
-    };
+    [key: string]: UserPropertyDetails;
 }
 
+export interface UserPropertyDetails {
+    intakeForm: IntakeForm
+    intakeFormComplete: boolean;
+
+    propertyCreateInProgress: boolean;
+    propertyId: string;
+    propertyReportId: number;
+    propertySlug: string;
+    propertyValue: PropertyValue;
+    propertyValuation: PropertyValuation;
+    propertySummary: string | null;
+
+    sellingTimeline?: string | null;
+
+    planType: "ESSENTIAL" | "ESSENTIAL_LEGAL" | "NONE" | null;
+    planDetails: {
+        purchaseDate: number;
+        purchasePrice: number;
+        purchasePriceExcludingTax: number;
+        paymentId: string;
+    } | null;
+}
 
 
 export interface ConciergeCalls {
