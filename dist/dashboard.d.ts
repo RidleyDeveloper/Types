@@ -42,7 +42,7 @@ export interface UserPropertyDetails {
     propertyValuation: PropertyValuation;
     propertySummary: string | null;
     sellingTimeline?: string | null;
-    planType: "ESSENTIAL" | "ESSENTIAL_LEGAL" | "NONE" | null;
+    planType: "ESSENTIAL" | "ESSENTIAL_LEGAL" | "ESSENTIAL_UNKNOWN" | "NONE" | null;
     planDetails: {
         purchaseDate: number;
         purchasePrice: number;

@@ -49,7 +49,7 @@ export interface UserPropertyDetails {
 
     sellingTimeline?: string | null;
 
-    planType: "ESSENTIAL" | "ESSENTIAL_LEGAL" | "NONE" | null;
+    planType: "ESSENTIAL" | "ESSENTIAL_LEGAL" | "ESSENTIAL_UNKNOWN" | "NONE" | null;
     planDetails: {
         purchaseDate: number;
         purchasePrice: number;
