@@ -18,6 +18,7 @@ export interface Property {
     updatedAt: number;
     hoa: HOA[];
     id: string;
+    currentOwnerId: string | null;
     marketDetails: MarketDetails[];
     marketGrade: MarketGrade;
     marketPulse: MarketPulse;
