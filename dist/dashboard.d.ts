@@ -1,7 +1,6 @@
 import { MarketConditions } from "./property";
 export interface Dashboard {
     confirmedPropertyDetails: PropertyDetailInfo;
-    notifications?: RidleyNotification[] | null;
     conciergeCalls: ConciergeCalls[];
     addresses: Address[];
     onboardingComplete: boolean;
