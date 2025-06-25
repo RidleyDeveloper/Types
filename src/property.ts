@@ -116,9 +116,15 @@ export interface ListingInfo {
     email: string;
     phone: string;
   };
-  propertyPhotos: string[];
+  propertyPhotos: string[] | ListingPhotos[];
   shortDescription: string;
   listingDescription: string;
+}
+
+export interface ListingPhotos {
+  main: string;
+  thumbnail: string;
+  original: string;
 }
 
 export interface PropertyComp {
