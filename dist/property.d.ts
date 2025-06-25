@@ -15,6 +15,7 @@ export interface Property {
     listingInfo: ListingInfo | null;
     draftListingInfo: ListingInfo | null;
     mlsInfo: MlsInfo | null;
+    mlsDetails: MlsDetails | null;
     updatedAt: number;
     hoa: HOA[];
     id: string;
@@ -78,6 +79,11 @@ export interface MarketPulse {
     saleToListPriceMedianMovingAvg: number;
     saleToListPriceOriginalMedian: number;
     saleToListPriceOriginalMedianMovingAvg: number;
+}
+export interface MlsDetails {
+    mlsId: string;
+    mlsName?: string;
+    link?: string;
 }
 export interface MlsInfo {
     address: Address;
