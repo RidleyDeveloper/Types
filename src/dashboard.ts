@@ -48,7 +48,7 @@ export interface UserPropertyDetails {
 
     sellingTimeline?: string | null;
 
-    planType: "ESSENTIAL" | "ESSENTIAL_LEGAL" | "ESSENTIAL_UNKNOWN" | "NONE" | null;
+    planType: "ESSENTIAL" | "ESSENTIAL_LEGAL" | "ESSENTIAL_SPLIT" | "ESSENTIAL_LEGAL_SPLIT" | "ESSENTIAL_UNKNOWN" | "NONE" | null;
     planDetails: {
         purchaseDate: number;
         purchasePrice: number;
