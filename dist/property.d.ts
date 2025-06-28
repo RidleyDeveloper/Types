@@ -84,6 +84,7 @@ export interface MlsDetails {
     mlsId: string;
     mlsName?: string;
     link?: string;
+    listedBy?: string;
 }
 export interface MlsInfo {
     address: Address;
