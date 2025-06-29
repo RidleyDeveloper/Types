@@ -116,7 +116,7 @@ export interface MlsInfo {
     listingPrice: number;
     mlsListingDescription: string;
     directions?: string;
-    propertySubtype?: string;
+    propertySubtype: string;
     structureType: string;
     taxLegalDescription: string;
     ownershipSeller: string;
@@ -157,8 +157,8 @@ export interface MlsInfo {
     poolFeatures?: string[];
     entryLocation?: string;
     totalNumberofUnits?: number;
-    lotSizeArea: string;
-    lotSizeMeasurements: string[];
+    lotSizeArea: number;
+    lotSizeMeasurements: string;
     lotNumber?: string;
     lotFeatures?: string[];
     fencing?: string[];
@@ -205,10 +205,6 @@ export interface MlsInfo {
     threeQuarterBathrooms?: number;
     halfBathrooms: number;
     quarterBathrooms?: number;
-    diningRoomLevel: string;
-    livingRoomLevel: string;
-    kitchenLevel: string;
-    laundryLevel: string;
     primaryBedroomLevel: string;
     bedroom1Level: string;
     bedroom2Level?: string;
@@ -220,6 +216,10 @@ export interface MlsInfo {
     bathroom1Level: string;
     bathroom2Level?: string;
     bathroom3Level?: string;
+    diningRoomLevel: string;
+    livingRoomLevel: string;
+    kitchenLevel: string;
+    laundryLevel: string;
     heatingType: string[];
     coolingType: string[];
     appliances?: string[];
@@ -231,7 +231,7 @@ export interface MlsInfo {
     windowFeatures?: string[];
     fireplacesTotal?: number;
     fireplaceFeatures?: string[];
-    furnished?: boolean;
+    furnished?: string;
     isAssociation: boolean;
     associationName?: string;
     associationType?: string;
