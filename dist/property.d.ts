@@ -238,12 +238,12 @@ export interface MlsInfo {
     associationFee?: number;
     associationFeeFrequency?: string;
     associationPhone?: string;
+    associationURL?: string;
     multipleAssociations?: boolean;
     otherAssociationInfo?: string;
     associationFeeIncludes?: string[];
     associationCommunityAmenities?: string[];
-    associationTransferAmount?: string;
-    associationTransferFee?: string;
+    associationTransferAmount?: number;
     associationPrivateTransferFee?: number;
     associationStatusLetterFee?: number;
     specialAssessmentDescription?: string;
