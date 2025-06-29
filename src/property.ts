@@ -205,7 +205,7 @@ export interface MlsInfo {
   utilities?: string[];
   electric?: string[];
 
-  // ParkingOutbuildings**
+  // ParkingOutbuildings
   parkingFeatures?: string[];
   parkingType1: string;
   parkingSpaces1: number;
@@ -286,7 +286,7 @@ export interface MlsInfo {
   otherRestrictions?: string;
 
   // Media
-  uploadedPhotos: string[];
+  uploadedPhotos: string[] | ListingPhotos[];
   addCaptions?: string;
   linkToPhotos?: string;
   linkToVirtualTour?: string;

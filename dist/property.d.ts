@@ -253,7 +253,7 @@ export interface MlsInfo {
     petsAllowed: string[];
     rentalsAllowed: string[];
     otherRestrictions?: string;
-    uploadedPhotos: string[];
+    uploadedPhotos: string[] | ListingPhotos[];
     addCaptions?: string;
     linkToPhotos?: string;
     linkToVirtualTour?: string;
