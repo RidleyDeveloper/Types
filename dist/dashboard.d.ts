@@ -40,6 +40,7 @@ export interface UserPropertyDetails {
     propertyValue: PropertyValue;
     propertyValuation: PropertyValuation;
     propertySummary: string | null;
+    onboardingHomeValue: number | null;
     sellingTimeline?: string | null;
     planType: "ESSENTIAL" | "ESSENTIAL_LEGAL" | "ESSENTIAL_SPLIT" | "ESSENTIAL_LEGAL_SPLIT" | "ESSENTIAL_UNKNOWN" | "NONE" | null;
     planDetails: {
