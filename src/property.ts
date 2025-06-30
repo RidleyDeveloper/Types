@@ -92,6 +92,8 @@ export interface MlsDetails {
 }
 
 export interface MlsInfo {
+  submittedAt?: string; // DateTime
+
   address: Address;
   createdAt?: number;
   updatedAt?: number;

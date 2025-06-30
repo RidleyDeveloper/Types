@@ -87,6 +87,7 @@ export interface MlsDetails {
     listedBy?: string;
 }
 export interface MlsInfo {
+    submittedAt?: string;
     address: Address;
     createdAt?: number;
     updatedAt?: number;
