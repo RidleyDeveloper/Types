@@ -1,4 +1,19 @@
 import { MarketConditions } from "./property";
+export declare enum PlanTypeEnum {
+    ESSENTIAL = "ESSENTIAL",
+    ESSENTIAL_LEGAL = "ESSENTIAL_LEGAL",
+    ESSENTIAL_SPLIT = "ESSENTIAL_SPLIT",
+    ESSENTIAL_LEGAL_SPLIT = "ESSENTIAL_LEGAL_SPLIT",
+    ESSENTIAL_UNKNOWN = "ESSENTIAL_UNKNOWN",
+    NONE = "NONE"
+}
+export type PlanType = PlanTypeEnum | null;
+export interface PlanDetails {
+    purchaseDate: number;
+    purchasePrice: number;
+    purchasePriceExcludingTax: number;
+    paymentId: string;
+}
 export interface Dashboard {
     confirmedPropertyDetails: PropertyDetailInfo;
     conciergeCalls: ConciergeCalls[];
@@ -42,13 +57,8 @@ export interface UserPropertyDetails {
     propertySummary: string | null;
     onboardingHomeValue: number | null;
     sellingTimeline?: string | null;
-    planType: "ESSENTIAL" | "ESSENTIAL_LEGAL" | "ESSENTIAL_SPLIT" | "ESSENTIAL_LEGAL_SPLIT" | "ESSENTIAL_UNKNOWN" | "NONE" | null;
-    planDetails: {
-        purchaseDate: number;
-        purchasePrice: number;
-        purchasePriceExcludingTax: number;
-        paymentId: string;
-    } | null;
+    planType: PlanType;
+    planDetails: PlanDetails | null;
 }
 export interface ConciergeCalls {
     meetingLink: string;
