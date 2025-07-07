@@ -1,14 +1,5 @@
 import { MarketConditions } from "./property";
-export declare const PlanTypeEnumValues: {
-    readonly ESSENTIAL: "ESSENTIAL";
-    readonly ESSENTIAL_LEGAL: "ESSENTIAL_LEGAL";
-    readonly ESSENTIAL_SPLIT: "ESSENTIAL_SPLIT";
-    readonly ESSENTIAL_LEGAL_SPLIT: "ESSENTIAL_LEGAL_SPLIT";
-    readonly ESSENTIAL_UNKNOWN: "ESSENTIAL_UNKNOWN";
-    readonly NONE: "NONE";
-};
-export type PlanTypeEnum = "ESSENTIAL" | "ESSENTIAL_LEGAL" | "ESSENTIAL_SPLIT" | "ESSENTIAL_LEGAL_SPLIT" | "ESSENTIAL_UNKNOWN" | "NONE";
-export type PlanType = PlanTypeEnum | null;
+export type PlanType = "ESSENTIAL" | "ESSENTIAL_LEGAL" | "ESSENTIAL_SPLIT" | "ESSENTIAL_LEGAL_SPLIT" | "ESSENTIAL_UNKNOWN" | "NONE" | null;
 export interface PlanDetails {
     purchaseDate: number;
     purchasePrice: number;

@@ -1,24 +1,14 @@
 import { MarketConditions } from "./property";
 
-// Plan Types and Enums
-export const PlanTypeEnumValues = {
-  ESSENTIAL: "ESSENTIAL",
-  ESSENTIAL_LEGAL: "ESSENTIAL_LEGAL",
-  ESSENTIAL_SPLIT: "ESSENTIAL_SPLIT",
-  ESSENTIAL_LEGAL_SPLIT: "ESSENTIAL_LEGAL_SPLIT",
-  ESSENTIAL_UNKNOWN: "ESSENTIAL_UNKNOWN",
-  NONE: "NONE",
-} as const;
-
-export type PlanTypeEnum =
+// Plan Types
+export type PlanType =
   | "ESSENTIAL"
   | "ESSENTIAL_LEGAL"
   | "ESSENTIAL_SPLIT"
   | "ESSENTIAL_LEGAL_SPLIT"
   | "ESSENTIAL_UNKNOWN"
-  | "NONE";
-
-export type PlanType = PlanTypeEnum | null;
+  | "NONE"
+  | null;
 
 export interface PlanDetails {
   purchaseDate: number;
