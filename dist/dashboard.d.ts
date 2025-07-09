@@ -11,6 +11,7 @@ export interface Dashboard {
     conciergeCalls: ConciergeCalls[];
     addresses: Address[];
     onboardingComplete: boolean;
+    firstTimeOnDashboard?: boolean;
     tasks: {
         [key: string]: {
             [key: string]: {
