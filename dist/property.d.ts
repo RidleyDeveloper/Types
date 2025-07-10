@@ -92,13 +92,15 @@ export interface MlsChangeRequest {
     createdAt?: number;
     updatedAt?: number;
     listingPrice?: number;
-    mlsListingDescription?: string;
+    listingDescription?: string;
     uploadedPhotos?: string[] | ListingPhotos[];
     linkToPhotos?: string;
     linkToVirtualTour?: string;
-    primaryEmail?: string;
-    primaryPhone?: string;
-    primaryContactName?: string;
+    contactInfo?: {
+        name?: string;
+        email?: string;
+        phone?: string;
+    };
     openHouseDate?: string;
     openHouseTimeStart?: string;
     openHouseTimeEnd?: string;

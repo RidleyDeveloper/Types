@@ -102,7 +102,7 @@ export interface MlsChangeRequest {
   listingPrice?: number;
 
   // Change Description
-  mlsListingDescription?: string;
+  listingDescription?: string;
 
   // Change Photos
   uploadedPhotos?: string[] | ListingPhotos[];
@@ -110,9 +110,11 @@ export interface MlsChangeRequest {
   linkToVirtualTour?: string;
 
   // Change Contact Info
-  primaryEmail?: string;
-  primaryPhone?: string;
-  primaryContactName?: string;
+  contactInfo?: {
+    name?: string;
+    email?: string;
+    phone?: string;
+  };
 
   // Open House
   openHouseDate?: string; // DateTime
