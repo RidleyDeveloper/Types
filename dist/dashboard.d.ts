@@ -199,6 +199,7 @@ export interface ValuationComponents {
     unique_features_value: number;
 }
 export interface PropertySource {
+    updatedAt?: number;
     content: PropertySourceValue;
     search: {
         author: string | null;
