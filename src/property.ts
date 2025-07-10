@@ -94,7 +94,7 @@ export interface MlsDetails {
 
 export interface MlsChangeRequest {
   // Time Stamps
-  lastSubmittedAt?: string; // DateTime
+  submittedAt?: string; // DateTime
   createdAt?: number;
   updatedAt?: number;
 

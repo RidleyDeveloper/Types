@@ -88,7 +88,7 @@ export interface MlsDetails {
     listedBy?: string;
 }
 export interface MlsChangeRequest {
-    lastSubmittedAt?: string;
+    submittedAt?: string;
     createdAt?: number;
     updatedAt?: number;
     listingPrice?: number;
