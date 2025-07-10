@@ -47,6 +47,7 @@ export interface UserPropertyDetails {
     propertySlug: string;
     propertyValue: PropertyValue;
     propertyValuation: PropertyValuation;
+    propertyValuationInProgress?: boolean;
     propertySummary: string | null;
     onboardingHomeValue: number | null;
     sellingTimeline?: string | null;
