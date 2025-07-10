@@ -95,6 +95,7 @@ export interface MlsChangeRequest {
     mlsListingDescription?: string;
     uploadedPhotos?: string[] | ListingPhotos[];
     linkToPhotos?: string;
+    linkToVirtualTour?: string;
     primaryEmail?: string;
     primaryPhone?: string;
     primaryContactName?: string;

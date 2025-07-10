@@ -107,6 +107,7 @@ export interface MlsChangeRequest {
   // Change Photos
   uploadedPhotos?: string[] | ListingPhotos[];
   linkToPhotos?: string;
+  linkToVirtualTour?: string;
 
   // Change Contact Info
   primaryEmail?: string;
