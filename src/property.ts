@@ -17,6 +17,7 @@ export interface Property {
   draftListingInfo: ListingInfo | null;
   mlsInfo: MlsInfo | null; // Placeholder for MLS info
   mlsDetails: MlsDetails | null; // the agent or broker that lists the house provides this info
+  mlsChangeRequest: MlsChangeRequest | null;
   updatedAt: number;
   hoa: HOA[];
   id: string;
@@ -89,6 +90,37 @@ export interface MlsDetails {
   mlsName?: string;
   link?: string;
   listedBy?: string;
+}
+
+export interface MlsChangeRequest {
+  // Time Stamps
+  lastSubmittedAt?: string; // DateTime
+  createdAt?: number;
+  updatedAt?: number;
+
+  // Change Price
+  listingPrice?: number;
+
+  // Change Description
+  mlsListingDescription?: string;
+
+  // Change Photos
+  uploadedPhotos?: string[] | ListingPhotos[];
+  linkToPhotos?: string;
+
+  // Change Contact Info
+  primaryEmail?: string;
+  primaryPhone?: string;
+  primaryContactName?: string;
+
+  // Open House
+  openHouseDate?: string; // DateTime
+  openHouseTimeStart?: string; // DateTime
+  openHouseTimeEnd?: string; // DateTime
+  openHouseType?: string;
+
+  // Other
+  other?: string;
 }
 
 export interface MlsInfo {
