@@ -7,6 +7,15 @@ export type PlanType =
   | "ESSENTIAL_SPLIT"
   | "ESSENTIAL_LEGAL_SPLIT"
   | "ESSENTIAL_UNKNOWN"
+  | "BASIC"
+  | "LEGAL"
+  | "MLS"
+  | "MLS_SPLIT"
+  | "BASIC_LEGAL"
+  | "BASIC_LEGAL_MLS"
+  | "BASIC_LEGAL_MLS_SPLIT"
+  | "BASIC_MLS"
+  | "BASIC_MLS_SPLIT"
   | "NONE"
   | null;
 
