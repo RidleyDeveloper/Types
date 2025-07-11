@@ -52,7 +52,14 @@ export interface UserPropertyDetails {
     onboardingHomeValue: number | null;
     sellingTimeline?: string | null;
     planType: PlanType;
-    planDetails: PlanDetails | null;
+    planPurchaseDetails?: RidleyPurchase[] | null;
+}
+export interface RidleyPurchase {
+    createDate: number;
+    planType: string;
+    pricePaid: number;
+    priceExcludingTax: number;
+    paymentId: string;
 }
 export interface ConciergeCalls {
     meetingLink: string;
