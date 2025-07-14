@@ -11,6 +11,8 @@ export type PlanType =
   | "LEGAL"
   | "MLS"
   | "MLS_SPLIT"
+  | "LEGAL_MLS"
+  | "LEGAL_MLS_SPLIT"
   | "BASIC_LEGAL"
   | "BASIC_LEGAL_MLS"
   | "BASIC_LEGAL_MLS_SPLIT"
@@ -86,11 +88,11 @@ export interface UserPropertyDetails {
 }
 
 export interface RidleyPurchase {
-    createDate: number;
-    planType: string;
-    pricePaid: number;
-    priceExcludingTax: number;
-    paymentId: string; 
+  createDate: number;
+  planType: string;
+  pricePaid: number;
+  priceExcludingTax: number;
+  paymentId: string;
 }
 
 export interface ConciergeCalls {
