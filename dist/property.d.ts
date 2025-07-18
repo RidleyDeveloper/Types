@@ -302,6 +302,7 @@ export interface ListingInfo {
     lotSize: string;
     yearBuilt: number;
     listingPrice: number;
+    listingStatus: string;
     schools: {
         elementary: string;
         middle: string;
