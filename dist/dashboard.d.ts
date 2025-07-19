@@ -8,6 +8,7 @@ export interface PlanDetails {
 }
 export interface Dashboard {
     confirmedPropertyDetails: PropertyDetailInfo;
+    currentPropertyClaimed?: boolean;
     conciergeCalls: ConciergeCalls[];
     addresses: Address[];
     onboardingComplete: boolean;
