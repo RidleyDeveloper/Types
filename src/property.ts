@@ -25,6 +25,7 @@ export interface Property {
   marketDetails: MarketDetails[];
   marketGrade: MarketGrade | null;
   marketPulse: MarketPulse | null;
+  address: Address | null;
 }
 
 export interface MarketGrade {
