@@ -3,14 +3,14 @@ import { Address, PropertyValue } from "./dashboard";
 export interface Property {
   propertyComps: Record<string, PropertyComp>;
   tempPhotos: string[];
-  propertyDetails: PropertyDetails;
-  schoolDetails: SchoolDetails;
-  propertyReportId: number;
+  propertyDetails: PropertyDetails | null;
+  schoolDetails: SchoolDetails | null;
+  propertyReportId: number | string;
   "address-slug": string;
   status: "DRAFT" | "PUBLISHED";
   publishedAt: number | null;
-  propertyValue: PropertyValue;
-  taxAssessment: TaxAssessment;
+  propertyValue: PropertyValue | null;
+  taxAssessment: TaxAssessment | null;
   createdAt: number;
   live: boolean;
   listingInfo: ListingInfo | null;
@@ -23,8 +23,8 @@ export interface Property {
   id: string;
   currentOwnerId: string | null;
   marketDetails: MarketDetails[];
-  marketGrade: MarketGrade;
-  marketPulse: MarketPulse;
+  marketGrade: MarketGrade | null;
+  marketPulse: MarketPulse | null;
 }
 
 export interface MarketGrade {
