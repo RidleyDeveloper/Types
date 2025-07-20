@@ -359,7 +359,7 @@ export interface ListingInfo {
   lotSize: string;
   yearBuilt: number;
   listingPrice: number;
-  listingStatus: string;
+  listingStatus: "OFF_MARKET" | "COMING_SOON" | "PENDING" | "FOR_SALE" | "SOLD";
   schools: {
     elementary: string;
     middle: string;
@@ -373,6 +373,10 @@ export interface ListingInfo {
   propertyPhotos: string[] | ListingPhotos[];
   shortDescription: string;
   listingDescription: string;
+  openHouseDate?: string; // DateTime
+  openHouseTimeStart?: string; // DateTime
+  openHouseTimeEnd?: string; // DateTime
+  openHouseType?: string;
 }
 
 export interface ListingPhotos {
