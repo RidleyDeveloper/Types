@@ -303,7 +303,7 @@ export interface ListingInfo {
     lotSize: string;
     yearBuilt: number;
     listingPrice: number;
-    listingStatus: "OFF_MARKET" | "COMING_SOON" | "PENDING" | "FOR_SALE" | "SOLD";
+    listingStatus?: "OFF_MARKET" | "COMING_SOON" | "PENDING" | "FOR_SALE" | "SOLD";
     schools: {
         elementary: string;
         middle: string;
