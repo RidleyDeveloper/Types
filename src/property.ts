@@ -336,10 +336,7 @@ export interface MlsInfo {
   mortgagePayoffAmount: number;
 
   // Open House
-  openHouseDate: string; // DateTime
-  openHouseTimeStart: string; // DateTime
-  openHouseTimeEnd: string; // DateTime
-  openHouseType: string;
+  openHouse?: OpenHouse[];
 }
 
 export interface ListingInfo {
@@ -378,10 +375,14 @@ export interface ListingInfo {
   propertyPhotos: string[] | ListingPhotos[];
   shortDescription: string;
   listingDescription: string;
-  openHouseDate?: string; // DateTime
-  openHouseTimeStart?: string; // DateTime
-  openHouseTimeEnd?: string; // DateTime
-  openHouseType?: string;
+  openHouse?: OpenHouse[];
+}
+
+export interface OpenHouse {
+  date: string;
+  timeStart: string;
+  timeEnd: string;
+  type: string;
 }
 
 export interface ListingPhotos {
