@@ -1,6 +1,6 @@
 {
   "name": "@ridleydeveloper/types",
-  "version": "1.0.71",
+  "version": "1.0.72",
   "types": "dist/index.d.ts",
   "files": [
     "dist"
