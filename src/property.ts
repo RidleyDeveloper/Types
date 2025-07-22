@@ -380,6 +380,7 @@ export interface ListingInfo {
     name: string;
     email: string;
     phone: string;
+    canShowContactInfo?: boolean;
   };
   propertyPhotos: string[] | ListingPhotos[];
   shortDescription: string;
