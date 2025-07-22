@@ -54,6 +54,7 @@ export interface UserPropertyDetails {
     sellingTimeline?: string | null;
     planType: PlanType;
     planPurchaseDetails?: RidleyPurchase[] | null;
+    propertyOwnershipVerified?: boolean;
 }
 export interface RidleyPurchase {
     createDate: number;

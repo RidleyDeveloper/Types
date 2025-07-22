@@ -86,6 +86,8 @@ export interface UserPropertyDetails {
 
   planType: PlanType;
   planPurchaseDetails?: RidleyPurchase[] | null;
+
+  propertyOwnershipVerified?: boolean;
 }
 
 export interface RidleyPurchase {
