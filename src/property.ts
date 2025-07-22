@@ -118,10 +118,7 @@ export interface MlsChangeRequest {
   };
 
   // Open House
-  openHouseDate?: string; // DateTime
-  openHouseTimeStart?: string; // DateTime
-  openHouseTimeEnd?: string; // DateTime
-  openHouseType?: string;
+  openHouse?: OpenHouse[];
 
   // Other
   other?: string;

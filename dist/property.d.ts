@@ -102,10 +102,7 @@ export interface MlsChangeRequest {
         email?: string;
         phone?: string;
     };
-    openHouseDate?: string;
-    openHouseTimeStart?: string;
-    openHouseTimeEnd?: string;
-    openHouseType?: string;
+    openHouse?: OpenHouse[];
     other?: string;
 }
 export interface MlsInfo {
