@@ -120,6 +120,12 @@ export interface MlsChangeRequest {
   // Open House
   openHouse?: OpenHouse[];
 
+  // Old Open House (Deprecated)
+  openHouseDate?: string;
+  openHouseTimeStart?: string;
+  openHouseTimeEnd?: string;
+  openHouseType?: string;
+
   // Other
   other?: string;
 }
@@ -334,6 +340,12 @@ export interface MlsInfo {
 
   // Open House
   openHouse?: OpenHouse[];
+
+  // Old Open House (Deprecated)
+  openHouseDate?: string;
+  openHouseTimeStart?: string;
+  openHouseTimeEnd?: string;
+  openHouseType?: string;
 }
 
 export interface ListingInfo {
@@ -373,6 +385,11 @@ export interface ListingInfo {
   shortDescription: string;
   listingDescription: string;
   openHouse?: OpenHouse[];
+  // Old Open House (Deprecated)
+  openHouseDate?: string;
+  openHouseTimeStart?: string;
+  openHouseTimeEnd?: string;
+  openHouseType?: string;
 }
 
 export interface OpenHouse {

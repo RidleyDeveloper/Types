@@ -103,6 +103,10 @@ export interface MlsChangeRequest {
         phone?: string;
     };
     openHouse?: OpenHouse[];
+    openHouseDate?: string;
+    openHouseTimeStart?: string;
+    openHouseTimeEnd?: string;
+    openHouseType?: string;
     other?: string;
 }
 export interface MlsInfo {
@@ -282,6 +286,10 @@ export interface MlsInfo {
     documentsAvailable?: string[];
     mortgagePayoffAmount: number;
     openHouse?: OpenHouse[];
+    openHouseDate?: string;
+    openHouseTimeStart?: string;
+    openHouseTimeEnd?: string;
+    openHouseType?: string;
 }
 export interface ListingInfo {
     address: Address;
@@ -312,6 +320,10 @@ export interface ListingInfo {
     shortDescription: string;
     listingDescription: string;
     openHouse?: OpenHouse[];
+    openHouseDate?: string;
+    openHouseTimeStart?: string;
+    openHouseTimeEnd?: string;
+    openHouseType?: string;
 }
 export interface OpenHouse {
     date: string;
