@@ -1,6 +1,7 @@
 import { Address, PropertyValue } from "./dashboard";
 export interface Property {
     propertyComps: Record<string, PropertyComp>;
+    quickListingInProgress?: boolean;
     tempPhotos: string[];
     propertyDetails: PropertyDetails | null;
     schoolDetails: SchoolDetails | null;
