@@ -24,6 +24,7 @@ export interface Dashboard {
     };
     currentProperty: string;
     id: string;
+    email: string;
 }
 export interface RidleyNotification {
     id: string;
