@@ -321,6 +321,7 @@ export interface ListingInfo {
     propertyPhotos: string[] | ListingPhotos[];
     shortDescription: string;
     listingDescription: string;
+    listingAdditionalInfo?: string;
     openHouse?: OpenHouse[];
     openHouseDate?: string;
     openHouseTimeStart?: string;

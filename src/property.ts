@@ -386,6 +386,7 @@ export interface ListingInfo {
   propertyPhotos: string[] | ListingPhotos[];
   shortDescription: string;
   listingDescription: string;
+  listingAdditionalInfo?: string;
   openHouse?: OpenHouse[];
   // Old Open House (Deprecated)
   openHouseDate?: string;
