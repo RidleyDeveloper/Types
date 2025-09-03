@@ -371,6 +371,7 @@ export interface ListingInfo {
     | "COMING_SOON"
     | "PENDING"
     | "FOR_SALE"
+    | "ACCEPTING_BACKUP_OFFERS"
     | "SOLD";
   schools: {
     elementary: string;
