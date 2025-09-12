@@ -18,6 +18,7 @@ export type PlanType =
   | "BASIC_LEGAL_MLS_SPLIT"
   | "BASIC_MLS"
   | "BASIC_MLS_SPLIT"
+  | "PRICE_VALUATION"
   | "NONE"
   | null;
 
