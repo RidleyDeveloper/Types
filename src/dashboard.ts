@@ -55,7 +55,7 @@ export interface Dashboard {
 
 export interface RidleyNotification {
   id: string;
-  createdAt: number;
+  createdAt: number | string;
   message: string;
   category: string;
   seen: boolean;
