@@ -26,6 +26,7 @@ export interface Property {
   marketDetails: MarketDetails[];
   marketGrade: MarketGrade | null;
   marketPulse: MarketPulse | null;
+  historicMarketPulse: MarketPulse[] | null;
   address: Address | null;
 }
 
