@@ -192,6 +192,46 @@ export interface PropertyValuation {
     };
     market_conditions: MarketConditions;
     valuation_components: ValuationComponents;
+    makeYourMove: PricingScenarios;
+}
+export interface PricingScenarios {
+    aggressive: PricingScenario;
+    market: PricingScenario;
+    aspirational: PricingScenario;
+    inputs: PricingInputs;
+}
+export type InterestLabel = "Very High" | "High" | "Medium" | "Low" | "Very Low";
+export interface PricingScenario {
+    name: "aggressive" | "market" | "aspirational";
+    list_price: number;
+    expected_dom_days: number;
+    dom_range_days: [number, number];
+    interest_label: InterestLabel;
+    delta_vs_market_list_pct: number;
+    days_per_1pct: number;
+    days_per_10k: number;
+}
+export interface PricingInputs {
+    mv_sale_value: number;
+    slr_median: number;
+    days_to_contract_median: number;
+    mos_median: number;
+    mos_ma: number;
+    uc_pct: number;
+    uc_pct_ma: number;
+    price_drop_pct_abs: number;
+    days_to_first_drop: number;
+    sample_sizes: {
+        n_closed?: number;
+        n_price_changes?: number;
+        n_price_drops?: number;
+    };
+    event_date: string;
+    geo?: {
+        level?: string;
+        id?: string;
+        fallback?: "none" | "city" | "county";
+    };
 }
 export interface ValuationComponents {
     baseline_value: number;
