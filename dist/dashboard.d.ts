@@ -193,7 +193,15 @@ export interface PropertyValuation {
     market_conditions: MarketConditions;
     valuation_components: ValuationComponents;
     makeYourMove: PricingScenarios;
+    valuationPresentation: ValuationPresentation;
 }
+export type ValuationPresentation = {
+    display_min_value: number;
+    display_max_value: number;
+    stat_min_value: number;
+    stat_max_value: number;
+    stat_coverage: number;
+};
 export interface PricingScenarios {
     aggressive: PricingScenario;
     market: PricingScenario;

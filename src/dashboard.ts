@@ -239,7 +239,18 @@ export interface PropertyValuation {
   market_conditions: MarketConditions;
   valuation_components: ValuationComponents;
   makeYourMove: PricingScenarios;
+  valuationPresentation: ValuationPresentation;
 }
+
+export type ValuationPresentation = {
+  // The "tight" range for the header (likely band)
+  display_min_value: number;
+  display_max_value: number;
+  // Full statistical band (tooltip transparency)
+  stat_min_value: number;
+  stat_max_value: number;
+  stat_coverage: number; // e.g., 0.85
+};
 
 export interface PricingScenarios {
     aggressive: PricingScenario;
