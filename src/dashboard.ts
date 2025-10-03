@@ -265,6 +265,7 @@ export interface PricingScenario {
   name: "aggressive" | "market" | "aspirational";
   list_price: number;                     // recommended list (rounded)
   expected_dom_days: number;              // point estimate (rounded)
+  expected_sale_price: number; 
   dom_range_days: [number, number];       // low/high (rounded)
   interest_label: InterestLabel;
   delta_vs_market_list_pct: number;       // e.g., -2.5 for aggressive
