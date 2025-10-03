@@ -263,12 +263,16 @@ export type InterestLabel = "Very High" | "High" | "Medium" | "Low" | "Very Low"
 
 export interface PricingScenario {
   name: "aggressive" | "market" | "aspirational";
+  // LIST-side outputs for UI selection
   list_price: number;                     // recommended list (rounded)
   expected_dom_days: number;              // point estimate (rounded)
-  expected_sale_price: number; 
   dom_range_days: [number, number];       // low/high (rounded)
   interest_label: InterestLabel;
   delta_vs_market_list_pct: number;       // e.g., -2.5 for aggressive
+  // SALE-side outputs to eliminate confusion in UI
+  expected_sale_price: number;            // list_price × SLR (rounded); for Market equals MV
+  slr_used_pct: number;                   // SLR actually used (after clamp)
+  // Explainability helpers
   days_per_1pct: number;                  // local slope (d per 1% mispricing)
   days_per_10k: number;                   // at P_MV list
 }
@@ -284,9 +288,9 @@ export interface PricingInputs {
   price_drop_pct_abs: number;
   days_to_first_drop: number;
   sample_sizes: {
-    n_closed?: number;
-    n_price_changes?: number;
-    n_price_drops?: number;
+      n_closed?: number;
+      n_price_changes?: number;
+      n_price_drops?: number;
   };
   event_date: string; // last row date used
   geo?: { level?: string; id?: string; fallback?: "none" | "city" | "county" };

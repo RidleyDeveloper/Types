@@ -213,10 +213,11 @@ export interface PricingScenario {
     name: "aggressive" | "market" | "aspirational";
     list_price: number;
     expected_dom_days: number;
-    expected_sale_price: number;
     dom_range_days: [number, number];
     interest_label: InterestLabel;
     delta_vs_market_list_pct: number;
+    expected_sale_price: number;
+    slr_used_pct: number;
     days_per_1pct: number;
     days_per_10k: number;
 }
