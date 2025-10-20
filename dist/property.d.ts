@@ -28,6 +28,7 @@ export interface Property {
     marketPulse: MarketPulse | null;
     historicMarketPulse: MarketPulse[] | null;
     address: Address | null;
+    slug?: string;
 }
 export interface MarketGrade {
     grade: "A" | "B" | "C" | "D" | "F";
