@@ -29,6 +29,7 @@ export interface Property {
     historicMarketPulse: MarketPulse[] | null;
     address: Address | null;
     slug?: string;
+    isQuickListing?: boolean;
 }
 export interface MarketGrade {
     grade: "A" | "B" | "C" | "D" | "F";
