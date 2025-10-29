@@ -44,15 +44,16 @@ export interface BuyerBrowse {
     mapBounds: [number, number, number, number];
 }
 export interface BuyerKYC {
-    verified: Boolean;
+    verified: boolean;
 }
+export type SubscriptionType = "MONTHLY" | "YEARLY";
 export interface RidleySubscription {
-    hasSubscription: Boolean;
-    subscriptionType: "MONTHLY" | "YEARLY";
-    subscriptionPeriodStart: Number;
-    subscriptionPeriodEnd: Number;
-    createDate: Number;
-    isTrial: Boolean;
+    hasSubscription: boolean;
+    subscriptionType: SubscriptionType;
+    subscriptionPeriodStart: number;
+    subscriptionPeriodEnd: number;
+    createDate: number;
+    isTrial: boolean;
 }
 export interface RidleyNotification {
     id: string;

@@ -74,17 +74,19 @@ export interface BuyerBrowse {
 }
 
 export interface BuyerKYC {
-  verified: Boolean;
+  verified: boolean;
   // add more fields here as needed
 }
 
+export type SubscriptionType = "MONTHLY" | "YEARLY";
+
 export interface RidleySubscription {
-  hasSubscription: Boolean;
-  subscriptionType: "MONTHLY" | "YEARLY";
-  subscriptionPeriodStart: Number;
-  subscriptionPeriodEnd: Number;
-  createDate: Number;
-  isTrial: Boolean;
+  hasSubscription: boolean;
+  subscriptionType: SubscriptionType;
+  subscriptionPeriodStart: number;
+  subscriptionPeriodEnd: number;
+  createDate: number;
+  isTrial: boolean;
 }
 
 export interface RidleyNotification {
