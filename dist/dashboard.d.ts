@@ -25,6 +25,34 @@ export interface Dashboard {
     currentProperty: string;
     id: string;
     email: string;
+    subscription: RidleySubscription;
+    buyerInfo: BuyerInfo;
+}
+export type BuyerReason = "SELL_PROPERTY" | "BUY_PROPERTY" | "SELL_AND_BUY_PROPERTY" | "EXPLORING_OPTIONS" | "IS_AGENT";
+export interface BuyerInfo {
+    reason: BuyerReason;
+    preQualification: boolean;
+    name: string;
+    phone: string;
+    buyerBrowse: BuyerBrowse;
+    buyerKYC: BuyerKYC;
+}
+export interface BuyerBrowse {
+    city: string;
+    zipcodes: string[];
+    state: string;
+    mapBounds: [number, number, number, number];
+}
+export interface BuyerKYC {
+    verified: Boolean;
+}
+export interface RidleySubscription {
+    hasSubscription: Boolean;
+    subscriptionType: "MONTHLY" | "YEARLY";
+    subscriptionPeriodStart: Number;
+    subscriptionPeriodEnd: Number;
+    createDate: Number;
+    isTrial: Boolean;
 }
 export interface RidleyNotification {
     id: string;
